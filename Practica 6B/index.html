@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de reserva de viajes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        div {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box; /* Para que el padding no afecte el ancho total */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Página de reserva de viajes waza</h1>
+
+    <form action="#" method="post">
+        
+        <fieldset>
+            <legend>Datos Personales</legend>
+            
+            <div>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="example@email.com" required>
+            </div>
+
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos del Viaje</legend>
+
+            <div>
+                <label for="acompaniantes">Número de acompañantes:</label>
+                <input type="number" id="acompaniantes" name="acompaniantes" step="1" min="1" max="5" required>
+            </div>
+
+            <div>
+                <label for="origen">Lugar de origen:</label>
+                <input type="text" id="origen" name="origen" value="San Salvador" readonly>
+            </div>
+
+            <div>
+                <label for="destino">Lugar de destino:</label>
+                <select id="destino" name="destino" required>
+                    <option value="" disabled selected>Seleccione un destino...</option>
+                    <option value="lauterbrunnen">Lauterbrunnen</option>
+                    <option value="florencia">Florencia</option>
+                    <option value="barcelona">Barcelona</option>
+                    <option value="venecia">Venecia</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="fecha_salida">Fecha de salida:</label>
+                <input type="date" id="fecha_salida" name="fecha_salida" required>
+            </div>
+
+            <div>
+                <label for="fecha_regreso">Fecha de regreso:</label>
+                <input type="date" id="fecha_regreso" name="fecha_regreso" required>
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Reservar Viaje">
+
+    </form>
+
+</body>
+</html>
