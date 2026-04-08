@@ -13,7 +13,7 @@ body {
 font-family: 'Inter', sans-serif;
 background-image: url(../img/street.jpg);
 background-size: contain;
-color: #333;
+color: #ebe9e9;
 line-height: 1.6;
 }
 
@@ -54,7 +54,7 @@ font-size: 0.9rem;
 
 .link {
 text-decoration: none;
-color: #fff;
+color: #050505;
 padding: 8px 15px;
 border-radius: 5px;
 transition: 0.3s;
@@ -73,14 +73,14 @@ margin: auto; /*mismo margen a la izquierda y derecha*/
 section {
 margin: 40px 0; /*Separar cada sección*/
 padding: 20px;
-background-color: #ffffffd5;
+background-color: #000000d5;
 border-radius: 10px;
-box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+box-shadow: 0 4px 10px rgb(250, 229, 229);
 }
 /* ID selector */
 #s1, #s2, #s3, #s4, #s5 {
 margin-bottom: 15px;
-color: #584343;
+color: #dfd7d7;
 text-align: center;
 }
 
@@ -184,4 +184,22 @@ padding: 20px;
 background-color: #000;
 color: white;
 margin-top: 40px;
+}
+
+body{
+    background-image: url(https://tse1.mm.bing.net/th/id/OIP.n9_PapQe6XlvBzb85uTCawHaHa?rs=1&pid=ImgDetMain&o=7&rm=3) ;
+    background-size: 200px;
+    background-repeat: repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+    z-index: -1;
+    
+}
+
+p{
+    margin-right: 500px;
+    font-size: 20px;
 }
